@@ -1,8 +1,64 @@
-.form {
+.rellena {
   display: flex;
   flex-direction: column;
+  margin-inline: 20px 19px;
+  margin-top: 10px;
 }
-.form_img {
+.rellena_dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+.rellena_dropdown_title {
+  display: flex;
+}
+.rellena_icon {
+  color:$color-dull-orange;
+}
+.rellena_title {
+  margin: 0 0 0 10px;
+  font-family: OpenSans;
+  font-size: 18px;
+  color: $color-gunmetal;
+}
+.rellena_img {
   display: flex;
   flex-direction: row;
+  margin-top: 7px;
+  gap: 30px;
+}
+.label_image {
+  width: 140px;
+  height: 30px;
+  font-size: 14px;
+  padding: 7px 22px 7px;
+  color: $color-white-Two;
+  background-color: $color-dull-orange;
+}
+.rellena_square {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-hospital-green;
+}
+.rellena_label {
+  color: $color-dark-green-blue;
+  font-family: OpenSans;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  margin-top: 20px;
+}
+.rellena_input {
+  height: 30px;
+  font-family: OpenSans;
+  font-size: 0.8rem;
+  border: 1px solid $color-hospital-green;
+  padding-left: 9px;
+  margin-top: 7px;
+}
+.rellena_separator {
+  border-bottom: 2px solid $color-white-Three;
+  margin-top: 30px;
+}
+.input_image {
+  display: none;
+  background-color: $color-dull-orange;
 }
