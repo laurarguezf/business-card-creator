@@ -1,0 +1,71 @@
+body {
+    background-color: $color-white-four;    
+}
+
+.landing_page_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 35.4px;
+}
+
+.landing_page_title {
+    color: $color-dull-orange;
+    font-family: $font-merriweather;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.landing_page_text {
+    color: $color-dark-green-blue;
+    font-size: 0.8rem;
+}
+
+.landing_page_subtitle {
+    width: 265px;
+    margin-bottom: 17.8px;
+    padding-top: 5px;
+}
+
+.icons_container {
+    width: 268px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border: solid 1.5px $color-dull-orange;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.one_icon_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.icon_img {
+    width: 25px;
+    height: 25px;
+    color: $color-dull-orange;
+}
+
+.icon_text {
+    padding-bottom: 7px;
+}
+
+.landing_page_button {
+    background-color: $color-dirty-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-block: 38.6px;
+}
+
+.button_anchor {
+    text-decoration: none;
+    color: $color-white-Two;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
