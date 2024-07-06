@@ -1,0 +1,75 @@
+.design{
+    padding-inline: 20px;
+    padding-top: 30px;
+
+    background-image: linear-gradient($color-white-four, $color-white-Two 9%);
+}
+
+.design_header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    width: 100%;
+}
+
+.design_arrow{
+    margin-left: auto;
+}
+
+.design_title{
+    text-transform: uppercase;
+
+    font-family: $font-opensans;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: $color-gunmetal;
+}
+
+.design_palettes{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.design_palettes_legend{
+    margin-left: 20px;
+
+    color: $color-gunmetal;
+
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $font-opensans;
+
+    text-transform: uppercase;
+}
+
+.design_palette_object{
+    display: flex;
+}
+
+.design_palette_element{
+    display: block;
+
+    width: 30px;
+    height: 25px;
+}
+
+.palette_wrap{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.palette_bottom_line{
+    display: block;
+
+    width: 100%;
+    margin-top: 10px;
+    
+    border-bottom: solid 1px #d8d8d8;
+}
