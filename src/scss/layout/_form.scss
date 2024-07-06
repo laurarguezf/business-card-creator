@@ -54,6 +54,10 @@
   padding-left: 9px;
   margin-top: 7px;
 }
+input:hover {
+  background-color: $color-brownish-grey;
+  color: $color-white-Two;
+}
 ::placeholder {
   color: $color-pinkish-grey; 
 }
