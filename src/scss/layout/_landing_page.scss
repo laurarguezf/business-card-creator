@@ -1,13 +1,21 @@
-/*body {
-    background-color: $color-white-four;    
-}*/
+.index_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: $color-white-four;
+}
 
 .landing_page_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 35.4px;
+    background-color: $color-white-four;
+
+    @media (min-width: 768px) {
+        padding-top: 20px;
+    }
 }
 
 .landing_page_title {
@@ -15,39 +23,64 @@
     font-family: $font-merriweather;
     font-size: 1.2rem;
     font-weight: bold;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 .landing_page_text {
     color: $color-dark-green-blue;
     font-size: 0.8rem;
+
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 .landing_page_subtitle {
-    width: 265px;
+    margin-inline: 27px;
     margin-bottom: 17.8px;
     padding-top: 5px;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+        margin-inline: 220px;
+    }
 }
 
 .icons_container {
-    width: 268px;
     display: flex;
     justify-content: center;
     gap: 24px;
-    border: solid 1.5px $color-dull-orange;
+    border: solid 1.5px rgba($color-dull-orange, 0.21);
     border-radius: 4px;
     padding: 10px 20px;
+
+    @media (min-width: 768px) {
+        gap: 30px;
+    }
 }
 
 .one_icon_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 768px) {
+        padding: 10px;; 
+    }
 } 
 
 .icon_img {
     width: 25px;
     height: 25px;
     color: $color-dull-orange;
+
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .icon_text {
@@ -60,7 +93,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    margin-block: 38.6px;
+    margin-top: 38px;
+    margin-bottom: 5px;
+
+    @media (min-width: 768px) {
+        margin-top: 160px;
+        margin-bottom: 60px;
+    }
 }
 
 .button_anchor {

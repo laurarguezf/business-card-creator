@@ -1,5 +1,8 @@
 .design{
-    padding: 20px;
+    padding-inline: 20px;
+    padding-top: 30px;
+
+    background-image: linear-gradient($color-white-four, $color-white-Two 9%);
 }
 
 .design_header{
@@ -17,7 +20,11 @@
 .design_title{
     text-transform: uppercase;
 
-    color: #54585a;
+    font-family: $font-opensans;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: $color-gunmetal;
 }
 
 .design_palettes{
@@ -28,7 +35,15 @@
 }
 
 .design_palettes_legend{
-    margin-left: 40px;
+    margin-left: 20px;
+
+    color: $color-gunmetal;
+
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $font-opensans;
+
+    text-transform: uppercase;
 }
 
 .design_palette_object{
@@ -45,6 +60,7 @@
 .palette_wrap{
     display: flex;
     gap: 10px;
+    align-items: center;
 
     margin-bottom: 20px;
 }

@@ -1,6 +1,14 @@
 .footer {
     background-color: $color-white-Two;
     text-align: center;
+    border-top: solid 1px $color-white-Three;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    }
 }
 
 .footer_text {
@@ -8,9 +16,21 @@
     color: $color-brownish-grey;
     opacity: 0.5;
     line-height: 1.43;
+    padding-top: 18px;
+    margin-bottom: 12px;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .footer_img {
     width: 103px;
-    height: 40px;
+    min-height: 40px;
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+        padding-block: 0;        
+    }
 }
