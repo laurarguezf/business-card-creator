@@ -1,0 +1,38 @@
+.iconShare {
+    color: $color-dull-orange;
+    
+}
+
+
+.shareText {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 8px;
+    width: 100%;
+    font-family: Opensans;
+}
+
+.createCardBtn {
+    font-size: 18px;
+    height: 50px;
+    width: 199px;
+    margin-left: 65px;
+    margin-top: 30px;
+    background-color: $color-dull-orange;
+    color: $color-white-Two;
+    border: none;
+    border-radius: 10px;
+}
+
+.createCardText {
+    padding-left: 10px;
+}
+
+.sectionShare {
+    display: flex;
+    width: 87%;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+}

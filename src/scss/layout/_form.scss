@@ -54,6 +54,13 @@
   padding-left: 9px;
   margin-top: 7px;
 }
+input:hover {
+  background-color: $color-placeholder;
+  color: $color-value-input;
+}
+::placeholder {
+  color: $color-pinkish-grey; 
+}
 .rellena_separator {
   border-bottom: 2px solid $color-white-Three;
   margin-top: 30px;
