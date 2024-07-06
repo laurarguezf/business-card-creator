@@ -1,0 +1,59 @@
+.design{
+    padding: 20px;
+}
+
+.design_header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    width: 100%;
+}
+
+.design_arrow{
+    margin-left: auto;
+}
+
+.design_title{
+    text-transform: uppercase;
+
+    color: #54585a;
+}
+
+.design_palettes{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.design_palettes_legend{
+    margin-left: 40px;
+}
+
+.design_palette_object{
+    display: flex;
+}
+
+.design_palette_element{
+    display: block;
+
+    width: 30px;
+    height: 25px;
+}
+
+.palette_wrap{
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.palette_bottom_line{
+    display: block;
+
+    width: 100%;
+    margin-top: 10px;
+    
+    border-bottom: solid 1px #d8d8d8;
+}
