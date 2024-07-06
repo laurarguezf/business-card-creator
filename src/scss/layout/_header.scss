@@ -1,5 +1,27 @@
-.landing_img {
-    max-width: 250px;
-    margin-top: 95px;
-    margin-inline: 35px;
+.index_body .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .header_img {
+      max-width: 250px;
+        margin-top: 10vh;
+        margin-inline: 35px;
+
+        @media (min-width: 768px) {
+            max-width: 420px;
+            margin-top: 20vh;
+        }  
+    }
+}
+
+.create_body .header {
+    background-color: $color-white-Two;
+    padding-block: 30px;
+    padding-left: 40px;
+
+    .header_img {
+        max-width: 200px;
+    }
 }

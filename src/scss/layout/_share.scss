@@ -1,27 +1,32 @@
 .iconShare {
     color: $color-dull-orange;
-    
 }
 
 
 .shareText {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     margin-left: 8px;
     width: 100%;
-    font-family: Opensans;
 }
 
 .createCardBtn {
     font-size: 18px;
     height: 50px;
     width: 199px;
-    margin-left: 65px;
-    margin-top: 30px;
     background-color: $color-dull-orange;
     color: $color-white-Two;
     border: none;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexBtn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .createCardText {
@@ -36,3 +41,66 @@
     align-items: center;
     margin-left: 20px;
 }
+
+.separator {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 2px solid $color-white-Three;
+}
+
+.separator2 {
+    margin-top: 30px;
+    border-bottom: 2px solid $color-white-Three;
+}
+
+.cardText {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.shareTwitter {
+     text-align: center; 
+}
+
+.cardUrl {
+    color: $color-dull-orange;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.twitterBtn {
+    background-color: $color-azure;
+    width: 170px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    
+}
+
+.twitterBird {
+    color: $color-white-Two;
+}
+
+.link {
+    text-decoration: none;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    color: $color-white-Two;
+}
+
+.createCardBtn:disabled {
+    background-color: $color-brownish-grey;
+}
+
+/* .hidden {
+    display: none;
+} */
