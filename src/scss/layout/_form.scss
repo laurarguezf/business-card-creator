@@ -4,21 +4,21 @@
   margin-inline: 20px 19px;
   margin-top: 10px;
 }
-.rellena_dropdown {
-  display: flex;
-  justify-content: space-between;
-}
-.rellena_dropdown_title {
-  display: flex;
-}
 .rellena_icon {
   color:$color-dull-orange;
 }
 .rellena_title {
-  margin: 0 0 0 10px;
-  font-family: OpenSans;
   font-size: 18px;
+  font-weight: 300;
+  margin-left: 8px;
+  width: 100%;
+}
+.rellena_legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   color: $color-gunmetal;
+  gap: 10px;
 }
 .rellena_img {
   display: flex;
@@ -41,14 +41,12 @@
 }
 .rellena_label {
   color: $color-dark-green-blue;
-  font-family: OpenSans;
   font-size: 0.8rem;
   line-height: 1.25rem;
   margin-top: 20px;
 }
 .rellena_input {
   height: 30px;
-  font-family: OpenSans;
   font-size: 0.8rem;
   border: 1px solid $color-hospital-green;
   padding-left: 9px;
