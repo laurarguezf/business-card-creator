@@ -1,71 +1,71 @@
 .rellena {
-  display: flex;
-  flex-direction: column;
-  margin-inline: 20px 19px;
-  margin-top: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px 19px;
+    margin-top: 10px;
+} 
 .rellena_icon {
-  color:$color-dull-orange;
+    color:$color-dull-orange;
 }
 .rellena_title {
-  font-family: $font-opensans;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-left: 8px;
-  width: 100%;
+    width: 100%;
+    margin-left: 8px;
+    font-family: $font-opensans;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .rellena_legend {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: $color-gunmetal;
-  gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $color-gunmetal;
+    gap: 10px;
 }
 .rellena_img {
-  display: flex;
-  flex-direction: row;
-  margin-top: 7px;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    gap: 20px;
 }
 .label_image {
-  width: 140px;
-  height: 30px;
-  font-size: 14px;
-  padding: 7px 22px 7px;
-  color: $color-white-Two;
-  background-color: $color-dull-orange;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    padding: 7px 22px 7px;
+    color: $color-white-Two;
+    background-color: $color-dull-orange;
 }
 .rellena_square {
-  width: 30px;
-  height: 30px;
-  border: 1px solid $color-hospital-green;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-hospital-green;
 }
 .rellena_label {
-  color: $color-dark-green-blue;
-  font-size: 0.8rem;
-  line-height: 1.25rem;
-  margin-top: 20px;
+    color: $color-dark-green-blue;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    margin-top: 20px;
 }
 .rellena_input {
-  height: 30px;
-  font-size: 0.8rem;
-  border: 1px solid $color-hospital-green;
-  padding-left: 9px;
-  margin-top: 7px;
-  outline: none;
+    height: 30px;
+    font-size: 0.8rem;
+    border: 1px solid $color-hospital-green;
+    padding-left: 9px;
+    margin-top: 7px;
+    outline: none;
 }
 input:hover {
-  background-color: $color-placeholder;
-  color: $color-value-input;
+    background-color: $color-placeholder;
+    color: $color-value-input;
 }
 ::placeholder {
-  color: $color-pinkish-grey; 
+    color: $color-pinkish-grey; 
 }
 .rellena_separator {
-  border-bottom: 1px solid $color-white-Three;
-  margin-top: 30px;
+    border-bottom: 1px solid $color-white-Three;
+    margin-top: 30px;
 }
 .input_image {
-  display: none;
-  background-color: $color-dull-orange;
+    display: none;
+    background-color: $color-dull-orange;
 }
