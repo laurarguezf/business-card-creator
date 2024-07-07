@@ -1,33 +1,33 @@
-.rellena {
+.fill__box {
     display: flex;
     flex-direction: column;
     margin-inline: 20px 19px;
     margin-top: 10px;
 } 
-.rellena_icon {
+.fill__icon {
     color:$color-dull-orange;
 }
-.rellena_title {
+.fill__title {
     width: 100%;
     margin-left: 8px;
     font-family: $font-opensans;
     font-size: 1rem;
     font-weight: 500;
 }
-.rellena_legend {
+.fill__heading {
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: $color-gunmetal;
     gap: 10px;
 }
-.rellena_img {
+.fill__img {
     display: flex;
     flex-direction: row;
     margin-top: 7px;
     gap: 20px;
 }
-.label_image {
+.add__image {
     width: 140px;
     height: 30px;
     font-size: 14px;
@@ -35,18 +35,18 @@
     color: $color-white-Two;
     background-color: $color-dull-orange;
 }
-.rellena_square {
+.fill__square {
     width: 30px;
     height: 30px;
     border: 1px solid $color-hospital-green;
 }
-.rellena_label {
+.fill__label {
     color: $color-dark-green-blue;
     font-size: 0.8rem;
     line-height: 1.25rem;
     margin-top: 20px;
 }
-.rellena_input {
+.fill__input {
     height: 30px;
     font-size: 0.8rem;
     border: 1px solid $color-hospital-green;
@@ -61,11 +61,10 @@ input:hover {
 ::placeholder {
     color: $color-pinkish-grey; 
 }
-.rellena_separator {
+.divider {
     border-bottom: 1px solid $color-white-Three;
     margin-top: 30px;
 }
 .input_image {
     display: none;
-    background-color: $color-dull-orange;
 }
