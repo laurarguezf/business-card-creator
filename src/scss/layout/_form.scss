@@ -54,9 +54,10 @@
     margin-top: 7px;
     outline: none;
 }
-input:hover {
+input:focus {
     background-color: $color-placeholder;
     color: $color-value-input;
+    border:none;
 }
 ::placeholder {
     color: $color-pinkish-grey; 
