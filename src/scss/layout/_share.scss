@@ -30,7 +30,9 @@
 .flexBtn {
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     @media (min-width: 768px) {
         padding-right: 20px;
 }
@@ -42,30 +44,29 @@
 
 .sectionShare {
     display: flex;
-    width: 87%;
     padding-top: 10px;
-    justify-content: space-around;
-        
-    align-items: center;
     margin-left: 20px;
+    width: 87%;     
+    align-items: center;
 }
 
 .separator {
     border-bottom: 1px solid $color-white-Three;
-    height: 75px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .separator2 {
-    border-bottom: 1px solid $color-white-Three; 
-    width: 100%;
+    border-top: 1px solid $color-white-Three; 
+    margin-top: 20px;
 }
 
 .cardText {
     font-size: 18px;
     font-weight: 600;
     margin-top: 15px;
+    margin-left: 20px;
 }
 
 .shareTwitter {
