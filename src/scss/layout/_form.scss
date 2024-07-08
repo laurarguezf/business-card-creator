@@ -6,13 +6,16 @@
 } 
 .fill__icon {
     color:$color-dull-orange;
+    width: 30px;
+    height: 24px;
 }
 .fill__title {
     width: 100%;
-    margin-left: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
     font-family: $font-opensans;
-    font-size: 1rem;
-    font-weight: 500;
+    color: $color-gunmetal;
 }
 .fill__heading {
     width: 100%;
