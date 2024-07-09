@@ -47,13 +47,12 @@
 .sectionShare {
     display: flex;
     padding-top: 10px;
-    margin-left: 20px;
-    width: 88%; 
-        @media (min-width: 768px) {
-            width: 90%;
-    }    
-    align-items: center;
+    width: 100%;
+        
+}
 
+.share {
+   padding: 20px; 
 }
 
 .separator {
