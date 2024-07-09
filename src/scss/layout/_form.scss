@@ -22,9 +22,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: $color-gunmetal;
-    gap: 10px;
     align-items: center;
+    color: $color-gunmetal;
+    border-bottom: 1px solid $color-white-Three;
+    padding-bottom: 10px;
+    gap: 10px;
 }
 .fill__img {
     display: flex;
