@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Virtual</title>
+    <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/main-7cddfe07.css">
+</head>
+<body class="create_body">
+
+        <header class="header">
+    <img class="header_img" src="./images/landing_page.svg" alt="Awesome profile-cards logo">
+</header>
+    <main class="main">
+        <section class="create_preview">
+            <div class="preview container">
+    <span class="reset_btn">
+        <i class="fa-regular fa-trash-can reset_btn--icon"></i>
+        <span class="reset_btn--text">Reset</span>
+    </span>
+    <div class="preview_card">
+        <div class="preview_info">
+            <h3 class="info_name">Nombre Apellido</h3>
+            <p class="info_job">Front-end developer</p>
+            <img class="info_img" src="./images/img_prueba_preview.jpg" alt="">
+        </div>
+        <div class="preview_contact">
+            <a href="" class="preview_contact--link"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>
+            <a href="" class="preview_contact--link"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>
+            <a href="" class="preview_contact--link"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>
+            <a href="" class="preview_contact--link"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>
+        </div>
+    </div>
+</div>
+        </section>
+        <section class="create_form">
+            <fieldset class="design">
+    <div class="design_header">
+        <i class="icon_img fa-regular fa-object-ungroup"></i>
+        <legend class="design_title">Diseña</legend>
+        <i class="fa-solid fa-chevron-down design_arrow"></i>
+    </div>
+    <div class="design_palettes">
+        <legend class="design_palettes_legend">Colores</legend>
+        <div class="design_palettes_wrap">
+            <div class="palette_wrap">
+                <input class="design_palette_radio" type="radio" id="html" name="fav_language" value="HTML">
+                <span class="design_palette_object">
+                    <span class="design_palette_element" style="background-color: #114e4e;"></span>
+                    <span class="design_palette_element" style="background-color: #438792;"></span>
+                    <span class="design_palette_element" style="background-color: #a2deaf;"></span>
+                </span>
+            </div>
+            <div class="palette_wrap">
+                <input class="design_palette_radio" type="radio" id="html" name="fav_language" value="HTML">
+                <span class="design_palette_object">
+                    <span class="design_palette_element" style="background-color: #420101;"></span>
+                    <span class="design_palette_element" style="background-color: #bd1010;"></span>
+                    <span class="design_palette_element" style="background-color: #e95626;"></span>
+                </span>
+            </div>
+            <div class="palette_wrap">
+                <input class="design_palette_radio" type="radio" id="html" name="fav_language" value="HTML">
+                <span class="design_palette_object">
+                    <span class="design_palette_element" style="background-color: #3e5b65;"></span>
+                    <span class="design_palette_element" style="background-color: #eab052;"></span>
+                    <span class="design_palette_element" style="background-color: #a0c0cf;"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <span class="palette_bottom_line"></span>
+
+</fieldset>
+            <form class="fill__form">
+    <fieldset class="fill__box">
+        <legend class="fill__heading">
+            <i class="fill__icon fa-regular fa-keyboard"></i>
+            <h2 class="fill__title">Rellena</h2>
+            <i class="fill_arrow fa-solid fa-chevron-down"></i>
+        </legend>
+        <label class="fill__label">Nombre completo:</label>
+        <input class="fill__input" type="text" name="name" placeholder="Ej: Sally Jill" required >
+
+        <label class="fill__label">Puesto</label>
+        <input class="fill__input" type="text" name="puesto" placeholder="Front-end unicorn" required >
+
+        <p class="fill__label">Imagen de perfil</p>
+        <div class="fill__img">
+            <label class="add__image" for="Añadir imagen">Añadir imagen</label><div class="fill__square"></div>
+            <input class="input_image" type="file" name="Añadir imagen" id="Añadir imagen" required>
+        </div>
+
+        <label class="fill__label">Email</label>
+        <input class="fill__input" type="text" name="email" placeholder="Ej: sally-hill@gmail.com" required>
+
+        <label class="fill__label">Teléfono</label>
+        <input class="fill__input" type="text" name="telefono" placeholder="Ej: 555-55-55-55n">
+
+        <label class="fill__label">Linkedin</label>
+        <input class="fill__input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required>
+
+        <label class="fill__label">Github</label>
+        <input class="fill__input" type="text" name="github" placeholder="Ej: @sally-hill" required>
+        
+        <span class="divider"></span>
+    </fieldset>
+</form>
+            <fieldset>
+    <legend class="sectionShare">
+    <i class="fa-solid fa-share-nodes iconShare"></i> 
+    <h2 class="shareText">COMPARTE</h2> 
+    <i class="fa-solid fa-chevron-down arrow"></i>
+    </legend>
+    <div class="flexBtn separator">
+    
+    <button class="createCardBtn"><i class="fa-regular fa-address-card"></i><span class="createCardText">CREAR TARJETA</span></button>
+    <div class="hidden separator2">
+        <p class="cardText"> La tarjeta ha sido creada: </p>
+        <p class="cardUrl">https://awesome-profile-card.com?id=A456DF0001</p>
+        <p class="twitterBtn"><i class="fa-brands fa-twitter twitterBird"></i><a href="https://x.com/?lang=es" class="link">Compartir en twitter</a></p>
+    </div>
+    </div>
+</fieldset>
+
+    
+        </section>
+    </main>
+        <footer class="footer">
+    <p class="footer_text">Awesome profile-cards &copy; 2024</p>
+    <img class="footer_img" src="./images/logo-adalab.png" alt="Adalab logo">
+</footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
