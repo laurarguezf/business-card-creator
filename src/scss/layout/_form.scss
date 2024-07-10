@@ -1,9 +1,10 @@
 .fill__box {
     display: flex;
     flex-direction: column;
-
-    margin-inline: 20px 19px;
+    margin-right: 19px;
     margin-top: 10px;
+    border-bottom: 1px solid $color-white-Three;
+    padding-bottom: 30px;
 } 
 
 .fill__icon {
