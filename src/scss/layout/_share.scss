@@ -33,11 +33,12 @@
 }
 
 .flexBtn {
-    margin-top: 30px;
+    margin-block: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid $color-white-Three;
 }
 
 .createCardText {
@@ -47,20 +48,17 @@
 .sectionShare {
     display: flex;
     padding-top: 10px;
-    margin-left: 20px;
-    width: 88%; 
-        @media (min-width: 768px) {
-            width: 90%;
-    }    
-    align-items: center;
-
+    width: 100%;
+    border-bottom: 1px solid $color-white-Three;    
+    padding-bottom: 7px;
 }
 
-.separator {
-    border-bottom: 1px solid $color-white-Three;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+.share {
+   padding-inline: 20px; 
+
+   @media(min-width: 768px){
+    padding-left: 0;
+}
 }
 
 .separator2 {
@@ -75,8 +73,6 @@
     margin-left: 30px;
     color:$color-gunmetal
 }
-
-
 
 .cardUrl {
     color: $color-dull-orange;

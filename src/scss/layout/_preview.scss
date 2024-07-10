@@ -1,117 +1,105 @@
 .preview{
     background-image: linear-gradient($color-silver, $color-pale-grey);
-
     padding: 40px;
+<<<<<<< HEAD
+=======
+    position: sticky;
+    top: 10px;
+
+>>>>>>> 0a2fad2dbcfd849beeeb86cd20398b761eae09c2
     @media(min-width: 768px){
         border-radius: 6px;
-
         background-image: none;
     }
 
 }
 
 .reset_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     width: 75px;
-    height: 45px;
-
-    padding: 6px 12px;
-
+    height: 30px;
+    padding: 12px 6px;
     margin-bottom: 20px;
-
     border: $color-white-Two solid 1px;
+    background-color: transparent;
     border-radius: 20px;
-
     cursor: pointer;
 }
 
 .reset_btn--icon{
     font-size: 0.8rem;
     line-height: 1.2rem;
-
     color: $color-gunmetal; 
 }
 
 .reset_btn--text{
     font-size: 0.8rem;
     line-height: 1.2rem;
-
     color: $color-gunmetal;
-
     font-family: $font-opensans;
     font-weight: 400;
-
     text-transform: uppercase;
 }
 
 .preview_card{
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a2fad2dbcfd849beeeb86cd20398b761eae09c2
     max-width: 240px;
-    
     margin-top: 20px;
 
     padding: 20px 0px 12px 0px;
-
     background-color: $color-white-Two;
-
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .info_name{
     padding-left: 20px;
-
     border-left: 5px solid $color-dirty-blue;
-
     font-family: $font-montserrat;
     font-size: 1.2rem;
     font-weight: 800;
     line-height: 20px;
-
     color: $color-dark-green-blue;
 }
 
 .info_job{
     padding-left: 20px;
     padding-top: 4px;
-
     border-left: 5px solid $color-dirty-blue;
-
     font-family: $font-montserrat;
     font-size: 1rem;
     font-weight: 600;
     line-height: 20px;
-
     color: $color-gunmetal;
 }
 
 .info_img{
     width: 100%;
     max-height: 200px;
-
     margin-block: 10px;
-
     object-fit: cover;
 }
 
 .preview_contact{
     display:flex;
     gap: 10px;
-
     margin-inline:20px;
 }
 
 .preview_contact--link{
     width: 32px;
     height: auto;
-
     text-align: center;
-
     border: 2px solid $color-hospital-green;
     border-radius: 50%;
-
     padding-block: 6px;
-
 }
 
 .preview_contact--icon{
