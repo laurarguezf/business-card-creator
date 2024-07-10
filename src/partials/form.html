@@ -1,30 +1,32 @@
-<fieldset class="fill__box">
-    <legend class="fill__heading">
+<fieldset class="fill__box collapsed">
+    <legend class="fill__heading js_fieldset">
         <i class="fill__icon fa-regular fa-keyboard"></i>
         <h2 class="fill__title">Rellena</h2>
-        <i class="fill_arrow fa-solid fa-chevron-down"></i>
+        <i class="fill_arrow fa-solid fa-chevron-up rotated"></i>
     </legend>
-    <label class="fill__label">Nombre completo:</label>
-    <input class="fill__input js__inputName" type="text" name="name" placeholder="Ej: Sally Jill" required >
+    <div class="fill_data content">
+        <label class="fill__label">Nombre completo:</label>
+        <input class="fill__input js__inputName" type="text" name="name" placeholder="Ej: Sally Jill" required >
 
-    <label class="fill__label">Puesto</label>
-    <input class="fill__input js__inputJob" type="text" name="puesto" placeholder="Front-end unicorn" required >
+        <label class="fill__label">Puesto</label>
+        <input class="fill__input js__inputJob" type="text" name="puesto" placeholder="Front-end unicorn" required >
 
-    <p class="fill__label">Imagen de perfil</p>
-    <div class="fill__img">
-        <label class="add__image" for="Añadir imagen">Añadir imagen</label><div class="fill__square"></div>
-        <input class="input_image" type="file" name="Añadir imagen" id="Añadir imagen" required>
+        <p class="fill__label">Imagen de perfil</p>
+        <div class="fill__img">
+            <label class="add__image" for="Añadir imagen">Añadir imagen</label><div class="fill__square"></div>
+            <input class="input_image" type="file" name="Añadir imagen" id="Añadir imagen" required>
+        </div>
+
+        <label class="fill__label">Email</label>
+        <input class="fill__input" type="text" name="email" placeholder="Ej: sally-hill@gmail.com" required>
+
+        <label class="fill__label">Teléfono</label>
+        <input class="fill__input" type="text" name="telefono" placeholder="Ej: 555-55-55-55n">
+
+        <label class="fill__label">Linkedin</label>
+        <input class="fill__input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required>
+
+        <label class="fill__label">Github</label>
+        <input class="fill__input" type="text" name="github" placeholder="Ej: @sally-hill" required>
     </div>
-
-    <label class="fill__label">Email</label>
-    <input class="fill__input" type="text" name="email" placeholder="Ej: sally-hill@gmail.com" required>
-
-    <label class="fill__label">Teléfono</label>
-    <input class="fill__input" type="text" name="telefono" placeholder="Ej: 555-55-55-55n">
-
-    <label class="fill__label">Linkedin</label>
-    <input class="fill__input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required>
-
-    <label class="fill__label">Github</label>
-    <input class="fill__input" type="text" name="github" placeholder="Ej: @sally-hill" required>
 </fieldset>
