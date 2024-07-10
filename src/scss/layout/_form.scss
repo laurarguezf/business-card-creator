@@ -2,9 +2,14 @@
     display: flex;
     flex-direction: column;
     margin-right: 19px;
+    margin-left: 20px;
     margin-top: 10px;
     border-bottom: 1px solid $color-white-Three;
     padding-bottom: 30px;
+
+    @media(min-width: 768px){
+        margin-left: 0px;
+    }
 } 
 
 .fill__icon {
