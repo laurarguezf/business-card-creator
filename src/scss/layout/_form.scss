@@ -25,10 +25,8 @@
 
 .fill__title {
     width: 100%;
-
     font-size: 1.2rem;
     font-weight: 600;
-
     text-transform: uppercase;
 }
 
@@ -38,46 +36,36 @@
 
 .fill__heading {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     color: $color-gunmetal;
-
     border-bottom: 1px solid $color-white-Three;
     padding-bottom: 7px;
-
+    padding-bottom: 10px;
     gap: 10px;
 }
 
 .fill__img {
     display: flex;
     flex-direction: row;
-
     margin-top: 7px;
-
     gap: 20px;
 }
 
 .add__image {
     width: 140px;
     height: 30px;
-
     font-size: 0.8rem;
-
     padding: 7px 22px 7px;
-
     color: $color-white-Two;
     background-color: $color-dull-orange;
-
     cursor: pointer;
 }
 
 .fill__square {
     width: 30px;
     height: 30px;
-
     border: 1px solid $color-hospital-green;
 }
 
@@ -92,22 +80,18 @@
 
 .fill__input {
     height: 30px;
-
     font-family: $font-opensans;
     font-size: 0.8rem;
-    
     padding-left: 9px;
     margin-top: 7px;
     border: 1px solid $color-hospital-green;
-
     outline: none;
 }
 
 input:focus {
     background-color: $color-placeholder;
     color: $color-value-input;
-
-    border:none;
+    border: none;
 }
 
 ::placeholder {
