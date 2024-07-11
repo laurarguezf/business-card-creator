@@ -8,8 +8,7 @@ function handleClickArrow(ev) {
 
         if(currentFieldset === clickedSection) {
             currentFieldset.classList.remove('collapsed');
-        }
-        else {
+        } else {
             currentFieldset.classList.add('collapsed');
         }
     }
