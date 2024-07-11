@@ -6,7 +6,6 @@
 
 .arrow {
     color: $color-gunmetal;
-    cursor: pointer; 
 }
 
 .shareText {
@@ -49,12 +48,15 @@
     display: flex;
     padding-top: 10px;
     width: 100%;
-        
+    border-top: 1px solid $color-white-Three;
     padding-bottom: 7px;
+    cursor: pointer;
 }
 
 .share {
    padding-inline: 20px; 
+   margin-bottom: 31px;
+   margin-top: 7px;
 
    @media(min-width: 768px){
     padding-left: 0;
