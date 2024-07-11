@@ -96,7 +96,7 @@
     color: $color-dark-green-blue;
 }
 
-/*PARA LOS COLORES DE LAS PALETAS*/
+/*PARA LOS COLORES DE LAS PALETAS
 .green{
     background-color: green;
 }
@@ -107,5 +107,82 @@
 
 .blue{
     background-color: blue;
+}
+*/
+
+.palette1{
+    .info_name{
+        color: $color-darkgreen-blue;
+        border-color: $color-dirty-blue;
+    }
+
+    .info_job{
+        border-color: $color-dirty-blue;
+    }
+
+    .preview_contact--link{
+        border-color: $color-hospital-green;
+    }
+
+    .preview_contact--icon{
+        color: $color-dark-green-blue;
+    }
+}
+
+.palette2{
+    .info_name{
+        color: $color-darkgreen-blue;
+        border-color: $color-dirty-blue;
+    }
+
+    .info_job{
+        border-color: $color-dirty-blue;
+    }
+
+    .preview_contact--link{
+        border-color: $color-hospital-green;
+    }
+
+    .preview_contact--icon{
+        color: $color-dark-green-blue;
+    }
+}
+
+.palette2{
+    .info_name{
+        color: $color-dried-blood;
+        border-color: $color-rusty-red;
+    }
+
+    .info_job{
+        border-color: $color-rusty-red;
+    }
+
+    .preview_contact--link{
+        border-color: $color-tomato;
+    }
+
+    .preview_contact--icon{
+        color: $color-dried-blood;
+    }
+}
+
+.palette3{
+    .info_name{
+        color: $color-slate;
+        border-color: $color-faded-orange;
+    }
+
+    .info_job{
+        border-color: $color-faded-orange;
+    }
+
+    .preview_contact--link{
+        border-color: $color-light-grey-blue;
+    }
+
+    .preview_contact--icon{
+        color: $color-slate;
+    }
 }
 

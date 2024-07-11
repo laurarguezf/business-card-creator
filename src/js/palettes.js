@@ -1,35 +1,21 @@
 const paletteWrap = document.querySelectorAll('.js__paletteWrap');
 const previewCard = document.querySelector('.js__previewCard');
 
-console.log(previewCard);
-
-const palettes = [
-    {
-        id: '1',
-        class: "green"
-    },
-    {
-        id: '2',
-        class: 'red'
-    },
-    {
-        id: '3',
-        class: 'blue'
-    }
-]
 
 function changeColorPalette(ev){
     const elementId = ev.currentTarget.dataset.id;
-    const clickedPalette = palettes.find(palette => palette.id === elementId);
-    const clickedClass = clickedPalette.class;
 
-    palettes.forEach(palette => previewCard.classList.remove(palette.class));
+    const paletteClass = Array.from(previewCard.classList).filter(object => object.includes('palette'));
 
-    previewCard.classList.add(clickedClass);
-    console.log(previewCard.classList);
+    previewCard.classList.remove(paletteClass);
+    previewCard.classList.add(`palette${elementId}`);
+
+    const currentRadio = ev.currentTarget.querySelector('.js_radioBtn');
+
+    if (currentRadio) {
+        currentRadio.checked = true;
+    }
 }
-
-
 
 for (const palette of paletteWrap){
     palette.addEventListener('click', changeColorPalette);
