@@ -1,10 +1,6 @@
 .fill__box {
-    
-    margin-right: 19px;
-    margin-left: 20px;
+    margin-inline: 20px;
     margin-top: 10px;
-    //border-bottom: 1px solid $color-white-Three;
-    //padding-bottom: 30px;
 
     @media(min-width: 768px){
         margin-left: 0px;
@@ -14,12 +10,12 @@
 .fill_data {
     display: flex;
     flex-direction: column;
+    padding-bottom: 23px;
 }
 
 .fill__icon {
     width: 25px;
     height: 25px;
-
     color:$color-dull-orange;
 }
 
@@ -30,20 +26,16 @@
     text-transform: uppercase;
 }
 
-.fill_arrow {
-    cursor: pointer;
-}
-
 .fill__heading {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: $color-gunmetal;
-    border-bottom: 1px solid $color-white-Three;
-    padding-bottom: 7px;
-    padding-bottom: 10px;
+    border-top: 1px solid $color-white-Three;
+    padding-top: 10px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .fill__img {
@@ -72,9 +64,7 @@
 .fill__label {
     font-size: 0.8rem;
     line-height: 1.25rem;
-
     margin-top: 20px;
-
     color: $color-dark-green-blue;
 }
 

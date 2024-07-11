@@ -14,11 +14,11 @@
     gap: 10px;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .design_arrow{
     margin-left: auto;
-    cursor: pointer;
     color: $color-gunmetal;
 }
 
@@ -34,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    border-bottom: solid 1px #d8d8d8;
     padding-bottom: 10px;
 }
 
