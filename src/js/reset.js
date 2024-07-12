@@ -9,7 +9,7 @@ const previewTlf = document.querySelector('.js__previewTlf');
 const previewMail = document.querySelector('.js__previewMail');
 const previewLinkedin = document.querySelector('.js__previewLinkedin');
 const previewGithub = document.querySelector('.js__previewGithub');
-const previewCard = document.querySelector('.js__previewCard');
+const previewCardReset = document.querySelector('.js__previewCard');
 
 
 
@@ -39,7 +39,7 @@ const resetCard = () => {
 }
 
 const resetPallete = () => {
-    previewCard.innerHTML = `<div class="js__previewCard">
+    previewCardReset.innerHTML = `<div class="js__previewCard">
         <div class="preview_info">
             <h3 class="info_name js__namePreview">Nombre Apellido</h3>
             <p class="info_job js__jobPreview">Front-end developer</p>
