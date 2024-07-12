@@ -1,6 +1,8 @@
 .preview{
     background-image: linear-gradient($color-silver, $color-pale-grey);
     padding: 40px;
+    position: sticky;
+    top: 10px;
     @media(min-width: 768px){
         border-radius: 6px;
         background-image: none;
