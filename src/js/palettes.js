@@ -1,7 +1,3 @@
-const paletteWrap = document.querySelectorAll('.js__paletteWrap');
-const previewCard = document.querySelector('.js__previewCard');
-
-
 function changeColorPalette(ev){
     const elementId = ev.currentTarget.dataset.id;
 
