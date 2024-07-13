@@ -12,6 +12,8 @@ function handleClickArrow(ev) {
             currentFieldset.classList.add('collapsed');
         }
     }
+    
+    clickedSection.scrollIntoView();
 }
 
 for (let i = 0; i < fieldsets.length; i++) {
