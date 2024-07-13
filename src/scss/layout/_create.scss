@@ -1,9 +1,9 @@
-.main{
+.main {
     @media(min-width: 768px){
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-
+        min-height: 90vh;
         padding: 20px 40px;
 
         background-image: linear-gradient($color-white-four, $color-white-Two 9%);
@@ -11,14 +11,15 @@
 }
 
 .create_preview{
+
     @media(min-width: 768px){
         width: 45%;
         border-radius: 10px;
         background-image: linear-gradient($color-silver, $color-pale-grey);
         display: flex;
         justify-content: center;
-        align-items: center;
-
+        align-items: flex-start;
+        position: relative;
     }
 
     @media(min-width: 1024px){
@@ -34,4 +35,12 @@
     @media(min-width: 1024px){
         width: 40%;
     }
+}
+
+.collapsed .content {
+    display: none;
+}
+
+.collapsed .rotated {
+    transform: rotate(180deg);
 }

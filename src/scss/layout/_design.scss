@@ -1,9 +1,10 @@
 .design{
-    padding-right: 20px;
+    padding-inline: 20px;
     padding-top: 30px;
     background-image: linear-gradient($color-white-four, $color-white-Two 9%);
 
     @media (min-width: 768px){
+        padding-left: 0;
         background-image: none;
     }
 }
@@ -13,11 +14,11 @@
     gap: 10px;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .design_arrow{
     margin-left: auto;
-    cursor: pointer;
     color: $color-gunmetal;
 }
 
@@ -33,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    border-bottom: solid 1px #d8d8d8;
     padding-bottom: 10px;
 }
 
