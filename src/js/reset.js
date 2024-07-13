@@ -2,10 +2,10 @@
 
 const resetBtn = document.querySelector('.js__resetBtn');
 const mailInput = document.querySelector('.js__inputMail');
-const inputTlf = document.querySelector('.js__inputTlf');
+const inputTlf = document.querySelector('.js__inputPhone');
 const inputLinkedin = document.querySelector('.js__inputLinkedin');
 const inputGithub = document.querySelector('.js__inputGithub');
-const previewTlf = document.querySelector('.js__previewTlf');
+const previewTlf = document.querySelector('.js__inputPhone');
 const previewMail = document.querySelector('.js__previewMail');
 const previewLinkedin = document.querySelector('.js__previewLinkedin');
 const previewGithub = document.querySelector('.js__previewGithub');
