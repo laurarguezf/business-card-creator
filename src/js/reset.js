@@ -42,6 +42,10 @@ const resetPallete = () => {
     previewCard.classList.remove('palette2');
     previewCard.classList.remove('palette3');
     previewCard.classList.add('palette1');
+
+    const radioBtns = document.querySelectorAll('.js_radioBtn');
+    radioBtns[0].checked = true;
+
 };
 
 
