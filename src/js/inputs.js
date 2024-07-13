@@ -25,7 +25,7 @@ const phonePreview = document.querySelector('.js__phonePreview');
 const inputMail = document.querySelector('.js__inputMail')
 const mailPreview = document.querySelector('.js__mailPreview');
 
-const inputLinkedin = document.querySelector('.js__inputLinkedin');
+const inputLkdin = document.querySelector('.js__inputLinkedin');
 const linkedinPreview = document.querySelector('.js__linkedinPreview');
 
 const inputGitHub = document.querySelector('.js__inputGithub');
@@ -64,7 +64,7 @@ jobInput.addEventListener('input' , handlerInput);
 
 inputPhone.addEventListener('input', handlerInput);
 inputMail.addEventListener('input', handlerInput);
-inputLinkedin.addEventListener('input', handlerInput);
+inputLkdin.addEventListener('input', handlerInput);
 inputGitHub.addEventListener('input', handlerInput);
 
 
