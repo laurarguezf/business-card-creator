@@ -3,13 +3,14 @@
 // VARIABLES GLOBALES
 
 const data = {
+    palette: '1',
     name:'',
     job: '',
     photo: '',
     phone: '',
     email: '',
     linkedin: '',
-    github: ''
+    github: '',
 }
 
 
