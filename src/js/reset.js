@@ -5,12 +5,10 @@ const handleClickResetInputCard = () => {
 }
 
 const resetInputs = () => {
-    nameInput.value = '';
-    jobInput.value = '';
-    mailInput.value = '';
-    inputTlf.value = '';
-    inputLinkedin.value = '';
-    inputGithub.value = '';
+
+    const form = document.querySelector('.js_create-form');
+
+    form.reset();
 }
 
 const resetCard = () => {
