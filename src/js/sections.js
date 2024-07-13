@@ -1,5 +1,3 @@
-const fieldsets = document.querySelectorAll('.js_fieldset');
-
 function handleClickArrow(ev) {
     const clickedSection = ev.currentTarget.closest('fieldset');
 
