@@ -1,4 +1,9 @@
 .preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     background-image: linear-gradient($color-silver, $color-pale-grey);
     padding: 40px;
     position: sticky;
@@ -8,6 +13,11 @@
         background-image: none;
     }
 
+}
+
+.preview_btn {
+    width: 100%;
+    max-width: 240px;
 }
 
 .reset_btn{
