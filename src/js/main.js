@@ -3,13 +3,14 @@
 // VARIABLES GLOBALES
 
 const data = {
+    palette: '1',
     name:'',
     job: '',
     photo: '',
     phone: '',
     email: '',
     linkedin: '',
-    github: ''
+    github: '',
 }
 
 
@@ -57,4 +58,4 @@ import './sections.js';
 import './palettes.js';
 import './inputs.js';
 import './reset.js';
-
+import './create.js';
