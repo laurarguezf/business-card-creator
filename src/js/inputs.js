@@ -18,8 +18,7 @@ const preview = () => {
 const handlerInput = (event) => {   
     data[event.target.name] = event.target.value
     preview();
-    console.log(document.querySelector('.js_createCardBtn'));
-    document.querySelector('.js_createCardBtn').removeAttribute('disabled');
+    createCardBtn.removeAttribute('disabled');
 };
 
 nameInput.addEventListener('input', handlerInput); 
