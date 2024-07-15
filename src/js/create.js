@@ -10,9 +10,14 @@ let shareUrl = '';
 
 const handleClickCreateCard = (ev) => {
     ev.preventDefault();
-
+    
     hiddenSection.classList.remove('hidden');
 
+    createCardBtn.innerHTML = `<button class="createCardBtn js_createCardBtn" disabled>
+        <i class="fa-regular fa-address-card"></i>
+        <span class="createCardText">CREAR TARJETA</span>
+        </button>`;
+        
     fetch('https://dev.adalab.es/api/card/', {
         method: 'POST',
         body: JSON.stringify(data),
