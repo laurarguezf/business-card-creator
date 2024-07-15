@@ -1,13 +1,3 @@
-const createCardBtn = document.querySelector('.js_createCardBtn');
-const cardUrl = document.querySelector('.js_cardUrl');
-const hiddenSection = document.querySelector('.js_hiddenSection');
-const twitterLink = document.querySelector('.js_link');
-const message = document.querySelector('.js_cardMessage');
-const cardSuccess = document.querySelector('.js_cardSuccess');
-const twitterBtn = document.querySelector('.js_twitterBtn');
-
-let shareUrl = '';
-
 const handleClickCreateCard = (ev) => {
     ev.preventDefault();
     
