@@ -12,11 +12,12 @@ const handleClickCreateCard = (ev) => {
     ev.preventDefault();
     
     hiddenSection.classList.remove('hidden');
-
-    createCardBtn.innerHTML = `<button class="createCardBtn js_createCardBtn" disabled>
+    
+    createCardBtn.setAttribute('disabled','');
+    /*createCardBtn.innerHTML = `<button class="createCardBtn js_createCardBtn" disabled>
         <i class="fa-regular fa-address-card"></i>
         <span class="createCardText">CREAR TARJETA</span>
-        </button>`;
+        </button>`;*/
         
     fetch('https://dev.adalab.es/api/card/', {
         method: 'POST',
@@ -27,9 +28,10 @@ const handleClickCreateCard = (ev) => {
     })
         .then( response => response.json() )
         .then( dataResponse => {
-            
+
             if( dataResponse.success === false) {
                 twitterBtn.classList.add('hidden');
+                cardSuccess.innerHTML = '';
                 cardUrl.innerHTML = `
                     <p>Ha sucedido un error al cargar la tarjeta</p>
                     <p>${dataResponse.error}</p>`;   

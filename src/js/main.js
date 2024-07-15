@@ -2,7 +2,7 @@
 
 // VARIABLES GLOBALES
 
-const data = {
+let data = {
     palette: '1',
     name:'',
     job: '',
