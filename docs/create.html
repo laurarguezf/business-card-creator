@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./assets/main-227d9f0d.css">
+  <link rel="stylesheet" href="./assets/main-e33631eb.css">
 </head>
 <body class="create_body">
 
@@ -22,22 +22,25 @@
     <main class="main">
         <section class="create_preview">
             <div class="preview">
-    <button class="reset_btn js__resetBtn">
-        <i class="fa-regular fa-trash-can reset_btn--icon"></i>
-        <span class="reset_btn--text">Reset</span>
-    </button>
+    <div class="preview_btn">
+        <button class="reset_btn js__resetBtn">
+            <i class="fa-regular fa-trash-can reset_btn--icon"></i>
+            <span class="reset_btn--text">Reset</span>
+        </button>
+    </div>    
     <div class="preview_card js__previewCard palette1">
         <div class="preview_info">
             <h3 class="info_name js__namePreview">Nombre Apellido</h3>
             <p class="info_job js__jobPreview">Front-end developer</p>
             <img class="info_img js__profile-image" src="./images/img_prueba_preview.jpg" alt="">
-        </div>
-        <nav class="preview_contact">
-            <a href="" class="preview_contact--link js__previewTlf js__phonePreview" target="_blank"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>
-            <a href="" class="preview_contact--link js__previewMail js__mailPreview" target="_blank"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>
-            <a href="" class="preview_contact--link js__previewLinkedin js__linkedinPreview" target="_blank"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>
-            <a href="" class="preview_contact--link js__previewGithub js__gitHubPreview" target="_blank"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>
-        </nav>
+        
+            <nav class="preview_contact">
+                <a href="" class="preview_contact--link js__previewTlf js__phonePreview" target="_blank"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>
+                <a href="" class="preview_contact--link js__previewMail js__mailPreview" target="_blank"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>
+                <a href="" class="preview_contact--link js__previewLinkedin js__linkedinPreview" target="_blank"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>
+                <a href="" class="preview_contact--link js__previewGithub js__gitHubPreview" target="_blank"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>
+            </nav>
+        </div>    
     </div>
 </div>
         </section>
@@ -118,15 +121,16 @@
         <i class="fa-solid fa-chevron-up arrow rotated"></i>
     </legend>
     <div class="flexBtn content">
-        <button class="createCardBtn">
+        <button class="createCardBtn js_createCardBtn">
             <i class="fa-regular fa-address-card"></i>
             <span class="createCardText">CREAR TARJETA</span>
         </button>
-        <div class="hidden separator2">
-            <p class="cardText"> La tarjeta ha sido creada: </p>
-            <p class="cardUrl">https://awesome-profile-card.com?id=A456DF0001</p>
-            <p class="twitterBtn"><i class="fa-brands fa-twitter twitterBird"></i><a href="https://x.com/?lang=es" class="link">Compartir en twitter</a></p>
+        <div class="hidden separator2 js_hiddenSection">
+            <p class="cardText js_cardSuccess"></p>
+            <a class="cardUrl js_cardUrl" href="" target="_blank"></a>
+            <p class="twitterBtn js_twitterBtn"><i class="fa-brands fa-twitter twitterBird"></i><a href="" class="link js_link" target="_blank">Compartir en twitter</a></p>
         </div>
+        
     </div>
 </fieldset>
 
