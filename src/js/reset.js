@@ -2,6 +2,7 @@ const handleClickResetInputCard = () => {
     resetInputs();
     resetCard();
     resetPallete();
+    resetCreatedCardSection();
 }
 
 const resetInputs = () => {
@@ -32,10 +33,9 @@ const resetPallete = () => {
 
 };
 
-
-
+const resetCreatedCardSection = () => {
+    hiddenSection.classList.add('hidden');
+};
 
 
 resetBtn.addEventListener ('click', handleClickResetInputCard);
-
-

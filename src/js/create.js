@@ -3,6 +3,8 @@ const cardUrl = document.querySelector('.js_cardUrl');
 const hiddenSection = document.querySelector('.js_hiddenSection');
 const twitterLink = document.querySelector('.js_link');
 const message = document.querySelector('.js_cardMessage');
+const cardSuccess = document.querySelector('.js_cardSuccess');
+const twitterBtn = document.querySelector('.js_twitterBtn');
 
 let shareUrl = '';
 
@@ -20,13 +22,16 @@ const handleClickCreateCard = (ev) => {
     })
         .then( response => response.json() )
         .then( dataResponse => {
-
+            
             if( dataResponse.success === false) {
+                twitterBtn.classList.add('hidden');
                 cardUrl.innerHTML = `
                     <p>Ha sucedido un error al cargar la tarjeta</p>
-                    <p>${dataResponse.error}</p>`;
+                    <p>${dataResponse.error}</p>`;   
             }
             else {
+                cardSuccess.innerHTML = 'La tarjeta ha sido creada:';
+                twitterBtn.classList.remove('hidden');
                 cardUrl.href = dataResponse.cardURL;
                 cardUrl.innerHTML = dataResponse.cardURL;
                 shareUrl = dataResponse.cardURL;
