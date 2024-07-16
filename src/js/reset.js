@@ -3,6 +3,7 @@ const handleClickResetInputCard = () => {
     resetCard();
     resetPallete();
     resetCreatedCardSection();
+    localStorage.setItem('personalData', JSON.stringify(data) );
 }
 
 const resetInputs = () => {

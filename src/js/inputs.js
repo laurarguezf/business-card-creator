@@ -1,12 +1,13 @@
 const defaultData = {   
     name: namePreview.textContent,
     job: jobPreview.textContent,
+    photo: profileImagen.src
 }
 
 const preview = () => { 
     namePreview.innerHTML = data.name || defaultData.name;
     jobPreview.innerHTML = data.job || defaultData.job;
-
+    profileImagen.src = data.photo || defaultData.photo;
     phonePreview.href = `tel:${data.phone}`;
     mailPreview.href = `mailto:${data.email}`;
     linkedinPreview.href = `https://${data.linkedin}`;
@@ -41,11 +42,13 @@ const handleFileSelect = (event) => {
             profilePreview.style.backgroundImage = `url(${imageUrl})`;
             profileImagen.src = imageUrl;
             data.photo = imageUrl;
+            localStorage.setItem('personalData', JSON.stringify(data) );
         };
         reader.readAsDataURL(file);
     } else { 
         console.error('No se ha seleccionado ningún archivo.');
     }
+    
     createCardBtn.removeAttribute('disabled');
     resetCreatedCardSection();
 };
@@ -64,8 +67,13 @@ function displayInfoLocal(data){
     inputMail.value = data.email;
     inputLkdin.value = data.linkedin;
     inputGitHub.value = data.github;
-    profilePreview.style.backgroundImage = `url(${data.photo})`;
-    profileImagen.src = data.photo;
+    if (data.photo === '') {
+        profileImagen.src = defaultData.photo;
+    }
+    else {
+        profileImagen.src = data.photo;
+    }
+    profilePreview.style.backgroundImage = `url(${data.photo})`;  
     
     preview();
 }

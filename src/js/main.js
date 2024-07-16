@@ -16,6 +16,7 @@ let data = {
 let shareUrl = '';
 
 
+
 // QUERY SELECTORS
 
 const fieldsets = document.querySelectorAll('.js_fieldset');
@@ -61,5 +62,3 @@ import './palettes.js';
 import './inputs.js';
 import './reset.js';
 import './create.js';
-
-
