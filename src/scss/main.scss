@@ -8,3 +8,8 @@
 @import './layout/preview';
 @import './layout/share';
 @import './layout/create';
+
+
+body {
+  min-width: 320px;
+}

@@ -18,6 +18,7 @@ const preview = () => {
 const handlerInput = (event) => {   
     data[event.target.name] = event.target.value
     preview();
+    createCardBtn.removeAttribute('disabled');
 };
 
 nameInput.addEventListener('input', handlerInput); 

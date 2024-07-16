@@ -2,13 +2,23 @@ const handleClickResetInputCard = () => {
     resetInputs();
     resetCard();
     resetPallete();
+    resetCreatedCardSection();
 }
 
 const resetInputs = () => {
 
     const form = document.querySelector('.js_create-form');
-
     form.reset();
+    data = {
+        palette: '1',
+        name:'',
+        job: '',
+        photo: '',
+        phone: '',
+        email: '',
+        linkedin: '',
+        github: '',
+    };
 }
 
 const resetCard = () => {
@@ -20,6 +30,10 @@ const resetCard = () => {
     previewGithub.innerHTML = `<a href="#" class="js__previewGithub"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>`;
     profileImagen.src = "./images/img_prueba_preview.jpg";
     profilePreview.style.backgroundImage = '';
+    createCardBtn.removeAttribute('disabled');
+    //createCardBtn.innerHTML = `<button class="createCardBtn js_createCardBtn"><i class="fa-regular fa-address-card"></i>
+                               //<span class="createCardText">CREAR TARJETA</span></button>`;       
+
 }
 
 const resetPallete = () => {
@@ -32,10 +46,9 @@ const resetPallete = () => {
 
 };
 
-
-
+const resetCreatedCardSection = () => {
+    hiddenSection.classList.add('hidden');
+};
 
 
 resetBtn.addEventListener ('click', handleClickResetInputCard);
-
-
