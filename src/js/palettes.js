@@ -8,6 +8,8 @@ function changeColorPalette(ev){
 
     const currentRadio = ev.currentTarget.querySelector('.js_radioBtn');
 
+    data.palette = elementId;
+
     if (currentRadio) {
         currentRadio.checked = true;
     }

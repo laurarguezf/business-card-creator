@@ -16,9 +16,11 @@ const preview = () => {
 }   
 
 const handlerInput = (event) => {   
-    data[event.target.name] = event.target.value
+    data[event.target.name] = event.target.value;
     preview();
     createCardBtn.removeAttribute('disabled');
+
+    localStorage.setItem('personalData', JSON.stringify(data) );
 };
 
 nameInput.addEventListener('input', handlerInput); 
@@ -47,6 +49,28 @@ const handleFileSelect = (event) => {
 };
 
 fileInput.addEventListener('change', handleFileSelect);
+
+const localData = JSON.parse(localStorage.getItem('personalData'));
+
+data = localData;
+
+function displayInfoLocal(data){
+    nameInput.value = data.name;
+    jobInput.value = data.job;
+    inputPhone.value = data.phone;
+    inputMail.value = data.email;
+    inputLkdin.value = data.linkedin;
+    inputGitHub.value = data.github;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+    profileImagen.src = data.photo;
+
+    preview();
+}
+
+displayInfoLocal(data);
+
+
+
 
 
 
