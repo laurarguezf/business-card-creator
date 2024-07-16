@@ -74,7 +74,7 @@ function displayInfoLocal(data){
         profileImagen.src = data.photo;
     }
     profilePreview.style.backgroundImage = `url(${data.photo})`;  
-    
+
     preview();
 }
 
