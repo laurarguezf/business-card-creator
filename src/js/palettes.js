@@ -48,5 +48,3 @@ function paletteFromLocalStorage(ev) {
 for (const palette of paletteWrap){
     palette.addEventListener('click', changeColorPalette);
 }
-
-paletteFromLocalStorage();

@@ -57,7 +57,11 @@ fileInput.addEventListener('change', handleFileSelect);
 
 const localData = JSON.parse(localStorage.getItem('personalData'));
 
-data = localData;
+if (localData !== null) {
+    data = localData;
+    paletteFromLocalStorage();
+    displayInfoLocal(data);
+};
 
 function displayInfoLocal(data){
 
@@ -78,7 +82,7 @@ function displayInfoLocal(data){
     preview();
 }
 
-displayInfoLocal(data);
+
 
 
 
