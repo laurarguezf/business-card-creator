@@ -19,6 +19,7 @@ const handlerInput = (event) => {
     data[event.target.name] = event.target.value
     preview();
     createCardBtn.removeAttribute('disabled');
+    resetCreatedCardSection();
 };
 
 nameInput.addEventListener('input', handlerInput); 
@@ -44,6 +45,8 @@ const handleFileSelect = (event) => {
     } else { 
         console.error('No se ha seleccionado ningún archivo.');
     }
+    createCardBtn.removeAttribute('disabled');
+    resetCreatedCardSection();
 };
 
 fileInput.addEventListener('change', handleFileSelect);

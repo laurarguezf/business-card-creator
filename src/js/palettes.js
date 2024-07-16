@@ -11,9 +11,11 @@ function changeColorPalette(ev){
     if (currentRadio) {
         currentRadio.checked = true;
     }
+
+    createCardBtn.removeAttribute('disabled');
+    resetCreatedCardSection();
 }
 
 for (const palette of paletteWrap){
     palette.addEventListener('click', changeColorPalette);
 }
-
