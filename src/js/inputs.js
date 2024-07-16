@@ -19,6 +19,8 @@ const handlerInput = (event) => {
     data[event.target.name] = event.target.value;
     preview();
     createCardBtn.removeAttribute('disabled');
+
+    localStorage.setItem('personalData', JSON.stringify(data) );
 };
 
 nameInput.addEventListener('input', handlerInput); 
@@ -55,6 +57,7 @@ const localData = JSON.parse(localStorage.getItem('personalData'));
 data = localData;
 
 function displayInfoLocal(data){
+
     nameInput.value = data.name;
     jobInput.value = data.job;
     inputPhone.value = data.phone;
@@ -67,7 +70,7 @@ function displayInfoLocal(data){
     preview();
 }
 
-displayInfoLocal(data);
+displayInfoLocal(localData);
 
 
 
