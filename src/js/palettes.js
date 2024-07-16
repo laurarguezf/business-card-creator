@@ -7,15 +7,15 @@ function changeColorPalette(ev){
     previewCard.classList.add(`palette${elementId}`);
 
     const currentRadio = ev.currentTarget.querySelector('.js_radioBtn');
-
-    data.palette = elementId;
-
+    
     if (currentRadio) {
         currentRadio.checked = true;
     }
 
     createCardBtn.removeAttribute('disabled');
     resetCreatedCardSection();
+
+    data.palette = elementId;
 }
 
 for (const palette of paletteWrap){

@@ -66,7 +66,7 @@ function displayInfoLocal(data){
     inputGitHub.value = data.github;
     profilePreview.style.backgroundImage = `url(${data.photo})`;
     profileImagen.src = data.photo;
-    
+
     preview();
 }
 
