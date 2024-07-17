@@ -53,6 +53,8 @@ const twitterLink = document.querySelector('.js_link');
 const message = document.querySelector('.js_cardMessage');
 const cardSuccess = document.querySelector('.js_cardSuccess');
 const twitterBtn = document.querySelector('.js_twitterBtn');
+const inputPhon = document.querySelector('.js__inputTel');
+const icontTel = document.querySelector('.js__icon');
 
 
 // IMPORT JS
