@@ -3,8 +3,8 @@ const cardUrl = document.querySelector('.js_cardUrl');
 const hiddenSection = document.querySelector('.js_hiddenSection');
 const twitterLink = document.querySelector('.js_link');
 const message = document.querySelector('.js_cardMessage');
-
-let shareUrl = '';
+const inputPhon = document.querySelector('.js__inputTel');
+const icontTel = document.querySelector('.js__icon');
 
 const handleClickCreateCard = (ev) => {
     ev.preventDefault();
@@ -33,6 +33,14 @@ const handleClickCreateCard = (ev) => {
                 twitterLink.href = `https://twitter.com/intent/tweet?text=He%20creado%20mi%20tarjeta%20de%20visita%2C%20puedes%20visualizarla%20en%20este%20enlace%3A%20&url=${shareUrl}`
             }
         })
-};
+        
+    if (inputPhon.value === '') {
+        icontTel.classList.add('hidden');
+
+    } 
+
+}
 
 createCardBtn.addEventListener( 'click' , handleClickCreateCard);
+
+
