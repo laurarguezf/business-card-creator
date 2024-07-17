@@ -4,6 +4,7 @@ const handleClickResetInputCard = () => {
     resetPallete();
     resetCreatedCardSection();
     localStorage.setItem('personalData', JSON.stringify(data) );
+    resetIconPhone();
 }
 
 const resetInputs = () => {
@@ -48,8 +49,11 @@ const resetPallete = () => {
 };
 
 const resetCreatedCardSection = () => {
-    hiddenSection.classList.add('hidden');
+    hiddenSection.classList.add('hidden'); 
 };
 
+const resetIconPhone = () => {
+    icontTel.classList.remove('hidden');
+}
 
 resetBtn.addEventListener ('click', handleClickResetInputCard);
