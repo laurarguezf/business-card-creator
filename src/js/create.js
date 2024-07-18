@@ -39,7 +39,9 @@ const handleClickCreateCard = (ev) => {
     if (inputPhon.value === '') {
         icontTel.classList.add('hidden');
 
-    } 
+    } else {
+        icontTel.classList.remove('hidden');
+    }
 
 }
 

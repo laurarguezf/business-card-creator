@@ -20,7 +20,7 @@ const handlerInput = (event) => {
     data[event.target.name] = event.target.value;
     preview();
     createCardBtn.removeAttribute('disabled');
-
+    resetCreatedCardSection();
     localStorage.setItem('personalData', JSON.stringify(data) );
 };
 
