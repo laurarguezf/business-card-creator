@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./assets/main-e33631eb.css">
+  <link rel="stylesheet" href="./assets/main-7fb7029a.css">
 </head>
 <body class="create_body">
 
@@ -35,7 +35,7 @@
             <img class="info_img js__profile-image" src="./images/img_prueba_preview.jpg" alt="">
         
             <nav class="preview_contact">
-                <a href="" class="preview_contact--link js__previewTlf js__phonePreview" target="_blank"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>
+                <a href="" class="preview_contact--link js__previewTlf js__phonePreview js__icon" target="_blank"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>
                 <a href="" class="preview_contact--link js__previewMail js__mailPreview" target="_blank"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>
                 <a href="" class="preview_contact--link js__previewLinkedin js__linkedinPreview" target="_blank"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>
                 <a href="" class="preview_contact--link js__previewGithub js__gitHubPreview" target="_blank"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>
@@ -89,28 +89,28 @@
         <i class="fa-solid fa-chevron-up rotated"></i>
     </legend>
     <div class="fill_data content">
-        <label class="fill__label">Nombre completo</label>
+        <label class="fill__label">Nombre completo<span class="asterisk"> * </span></label>
         <input class="fill__input js__inputName" type="text" name="name" placeholder="Ej: Sally Jill" required >
 
-    <label class="fill__label">Puesto</label>
+    <label class="fill__label">Puesto<span class="asterisk"> * </span></label>
     <input class="fill__input js__inputJob" type="text" name="job" placeholder="Front-end unicorn" required >
 
-    <p class="fill__label">Imagen de perfil</p>
+    <p class="fill__label">Imagen de perfil<span class="asterisk"> * </span></p>
     <div class="fill__img">
         <label class="add__image" for="Añadir imagen">Añadir imagen</label><div class="fill__square js__profile-preview"></div>
         <input class="input_image js__profile-upload-btn" type="file" name="Añadir imagen" id="Añadir imagen" required >
     </div>
 
-    <label class="fill__label">Email</label>
+    <label class="fill__label">Email<span class="asterisk"> * </span></label>
     <input class="fill__input js__inputMail" type="text" name="email" placeholder="Ej: sally-hill@gmail.com" required >
 
     <label class="fill__label">Teléfono</label>
-    <input class="fill__input js__inputPhone" type="text" name="phone" placeholder="Ej: 555-55-55-55n" >
+    <input class="fill__input js__inputPhone js__inputTel" type="text" name="phone" placeholder="Ej: 555-55-55-55n" >
 
-    <label class="fill__label">Linkedin</label>
+    <label class="fill__label">Linkedin<span class="asterisk"> * </span></label>
     <input class="fill__input js__inputLinkedin" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required >
 
-    <label class="fill__label">Github</label>
+    <label class="fill__label">Github<span class="asterisk"> * </span></label>
     <input class="fill__input js__inputGithub" type="text" name="github" placeholder="Ej: @sally-hill" required >
 </fieldset>
 
