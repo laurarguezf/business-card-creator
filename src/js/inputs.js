@@ -27,16 +27,6 @@ const handlerInput = (event) => {
 const inputElements = [nameInput, jobInput, inputPhone, inputMail, inputLkdin, inputGitHub];
 inputElements.forEach(input => input.addEventListener('input', handlerInput));
 
-/*
-nameInput.addEventListener('input', handlerInput); 
-jobInput.addEventListener('input' , handlerInput);  
-inputPhone.addEventListener('input', handlerInput);
-inputMail.addEventListener('input', handlerInput);
-inputLkdin.addEventListener('input', handlerInput);
-inputGitHub.addEventListener('input', handlerInput);
-*/
-
-
 const handleFileSelect = (event) => {
     const file = event.target.files[0];
     if (file) { 
