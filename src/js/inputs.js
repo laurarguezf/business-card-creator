@@ -5,23 +5,23 @@ const defaultData = {
 }
 
 const preview = () => { 
-    namePreview.innerHTML = data.name || defaultData.name;
-    jobPreview.innerHTML = data.job || defaultData.job;
-    profileImagen.src = data.photo || defaultData.photo;
-    phonePreview.href = `tel:${data.phone}`;
-    mailPreview.href = `mailto:${data.email}`;
-    linkedinPreview.href = `https://linkedin.com/in/${data.linkedin}`;
+    namePreview.innerHTML = initData.name || defaultData.name;
+    jobPreview.innerHTML = initData.job || defaultData.job;
+    profileImagen.src = initData.photo || defaultData.photo;
+    phonePreview.href = `tel:${initData.phone}`;
+    mailPreview.href = `mailto:${initData.email}`;
+    linkedinPreview.href = `https://linkedin.com/in/${initData.linkedin}`;
 
-    const githubFixedName = data.github.startsWith('@') ? data.github.slice(1) : data.github;
+    const githubFixedName = initData.github.startsWith('@') ? initData.github.slice(1) : initData.github;
     gitGubPreview.href = `https://github.com/${githubFixedName}`;
 }   
 
 const handlerInput = (event) => {   
-    data[event.target.name] = event.target.value;
+    initData[event.target.name] = event.target.value;
     preview();
     createCardBtn.removeAttribute('disabled');
     resetCreatedCardSection();
-    localStorage.setItem('personalData', JSON.stringify(data) );
+    localStorage.setItem('personalData', JSON.stringify(initData) );
 };
 
 const inputElements = [nameInput, jobInput, inputPhone, inputMail, inputLkdin, inputGitHub];
@@ -35,8 +35,8 @@ const handleFileSelect = (event) => {
             const imageUrl = reader.result;
             profilePreview.style.backgroundImage = `url(${imageUrl})`;
             profileImagen.src = imageUrl;
-            data.photo = imageUrl;
-            localStorage.setItem('personalData', JSON.stringify(data) );
+            initData.photo = imageUrl;
+            localStorage.setItem('personalData', JSON.stringify(initData) );
         };
         reader.readAsDataURL(file);
     } else { 
@@ -52,28 +52,28 @@ fileInput.addEventListener('change', handleFileSelect);
 const localData = JSON.parse(localStorage.getItem('personalData'));
 
 if (localData !== null) {
-    data = localData;
+    initData = localData;
     paletteFromLocalStorage();
-    displayInfoLocal(data);
+    displayInfoLocal(initData);
 };
 
-function displayInfoLocal(data) {
+function displayInfoLocal(initData) {
 
-    nameInput.value = data.name;
-    jobInput.value = data.job;
-    inputPhone.value = data.phone;
-    inputMail.value = data.email;
-    inputLkdin.value = data.linkedin;
-    inputGitHub.value = data.github;
+    nameInput.value = initData.name;
+    jobInput.value = initData.job;
+    inputPhone.value = initData.phone;
+    inputMail.value = initData.email;
+    inputLkdin.value = initData.linkedin;
+    inputGitHub.value = initData.github;
 
-    if (data.photo === '') {
+    if (initData.photo === '') {
         profileImagen.src = defaultData.photo;
     }
     else {
-        profileImagen.src = data.photo;
+        profileImagen.src = initData.photo;
     }
 
-    profilePreview.style.backgroundImage = `url(${data.photo})`;  
+    profilePreview.style.backgroundImage = `url(${initData.photo})`;  
 
     preview();
 }

@@ -4,14 +4,14 @@ const handleClickResetInputCard = () => {
     resetPallete();
     resetIconPhone();
     resetCreatedCardSection();
-    localStorage.setItem('personalData', JSON.stringify(data) );
+    localStorage.setItem('personalData', JSON.stringify(initData) );
 }
 
 const resetInputs = () => {
 
     const form = document.querySelector('.js_create-form');
     form.reset();
-    data = {
+    initData = {
         palette: '1',
         name:'',
         job: '',

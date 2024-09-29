@@ -7,7 +7,7 @@ const handleClickCreateCard = async (ev) => {
     try {
         const response = await fetch('https://dev.adalab.es/api/card/', {
             method: 'POST',
-            body: JSON.stringify(data),
+            body: JSON.stringify(initData),
             headers: {'Content-Type': 'application/json'}  
         });
 

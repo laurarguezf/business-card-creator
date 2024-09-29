@@ -2,7 +2,7 @@
 
 // VARIABLES GLOBALES
 
-let data = {
+let initData = {
     palette: '1',
     name:'',
     job: '',

@@ -11,15 +11,15 @@ function changeColorPalette(ev){
     if (currentRadio) {
         currentRadio.checked = true;
     }
-    data.palette = elementId;
+    initData.palette = elementId;
     createCardBtn.removeAttribute('disabled');
     resetCreatedCardSection();
 
-    localStorage.setItem('personalData', JSON.stringify(data) );
+    localStorage.setItem('personalData', JSON.stringify(initData) );
 }
 
 function paletteFromLocalStorage(ev) {
-    if (data.palette === '') {
+    if (initData.palette === '') {
         const paletteClass = Array.from(previewCard.classList).filter(object => object.includes('palette'));
         previewCard.classList.remove(paletteClass);
         previewCard.classList.add(`palette1`);
