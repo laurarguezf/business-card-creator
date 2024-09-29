@@ -26,10 +26,10 @@ const resetInputs = () => {
 const resetCard = () => {
     namePreview.innerHTML = `Nombre Apellido`;
     jobPreview.innerHTML = `Front-end developer`;
-    phonePreview.innerHTML = ``;
-    mailPreview.innerHTML = ``;
-    linkedinPreview.innerHTML = ``;
-    gitGubPreview.innerHTML = ``;
+    phonePreview.innerHTML = `<a href="#" class="js__previewTlf"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>`;
+    mailPreview.innerHTML = `<a href="#" class="js__previewMail"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>`;
+    linkedinPreview.innerHTML = `<a href="#" class="js__previewLinkedin"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>`;
+    gitGubPreview.innerHTML = `<a href="#" class="js__previewGithub"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>`;
     profileImagen.src = "./images/img_prueba_preview.jpg";
     profilePreview.style.backgroundImage = '';
     createCardBtn.removeAttribute('disabled');
