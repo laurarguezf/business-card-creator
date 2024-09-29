@@ -10,7 +10,7 @@ const preview = () => {
     profileImagen.src = data.photo || defaultData.photo;
     phonePreview.href = `tel:${data.phone}`;
     mailPreview.href = `mailto:${data.email}`;
-    linkedinPreview.href = `https://${data.linkedin}`;
+    linkedinPreview.href = `https://linkedin.com/in/${data.linkedin}`;
 
     const githubFixedName = data.github.startsWith('@') ? data.github.slice(1) : data.github;
     gitGubPreview.href = `https://github.com/${githubFixedName}`;
@@ -24,13 +24,17 @@ const handlerInput = (event) => {
     localStorage.setItem('personalData', JSON.stringify(data) );
 };
 
+const inputElements = [nameInput, jobInput, inputPhone, inputMail, inputLkdin, inputGitHub];
+inputElements.forEach(input => input.addEventListener('input', handlerInput));
+
+/*
 nameInput.addEventListener('input', handlerInput); 
 jobInput.addEventListener('input' , handlerInput);  
-
 inputPhone.addEventListener('input', handlerInput);
 inputMail.addEventListener('input', handlerInput);
 inputLkdin.addEventListener('input', handlerInput);
 inputGitHub.addEventListener('input', handlerInput);
+*/
 
 
 const handleFileSelect = (event) => {
@@ -63,7 +67,7 @@ if (localData !== null) {
     displayInfoLocal(data);
 };
 
-function displayInfoLocal(data){
+function displayInfoLocal(data) {
 
     nameInput.value = data.name;
     jobInput.value = data.job;
@@ -71,12 +75,14 @@ function displayInfoLocal(data){
     inputMail.value = data.email;
     inputLkdin.value = data.linkedin;
     inputGitHub.value = data.github;
+
     if (data.photo === '') {
         profileImagen.src = defaultData.photo;
     }
     else {
         profileImagen.src = data.photo;
     }
+
     profilePreview.style.backgroundImage = `url(${data.photo})`;  
 
     preview();

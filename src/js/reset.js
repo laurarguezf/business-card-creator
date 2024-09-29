@@ -2,9 +2,9 @@ const handleClickResetInputCard = () => {
     resetInputs();
     resetCard();
     resetPallete();
+    resetIconPhone();
     resetCreatedCardSection();
     localStorage.setItem('personalData', JSON.stringify(data) );
-    resetIconPhone();
 }
 
 const resetInputs = () => {
@@ -26,16 +26,13 @@ const resetInputs = () => {
 const resetCard = () => {
     namePreview.innerHTML = `<h3 class="js__namePreview">Nombre Apellido</h3>`;
     jobPreview.innerHTML = `<p class="js__jobPreview">Front-end developer</p>`;
-    previewTlf.innerHTML = `<a href="#" class="js__previewTlf"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>`;
-    previewMail.innerHTML = `<a href="#" class="js__previewMail"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>`;
-    previewLinkedin.innerHTML = `<a href="#" class="js__previewLinkedin"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>`;
-    previewGithub.innerHTML = `<a href="#" class="js__previewGithub"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>`;
+    phonePreview.innerHTML = `<a href="#" class="js__previewTlf"><i class="fa-solid fa-mobile-screen-button preview_contact--icon"></i></a>`;
+    mailPreview.innerHTML = `<a href="#" class="js__previewMail"><i class="fa-regular fa-envelope preview_contact--icon"></i></a>`;
+    linkedinPreview.innerHTML = `<a href="#" class="js__previewLinkedin"><i class="fa-brands fa-linkedin-in preview_contact--icon"></i></a>`;
+    gitGubPreview.innerHTML = `<a href="#" class="js__previewGithub"><i class="fa-brands fa-github-alt preview_contact--icon"></i></a>`;
     profileImagen.src = "./images/img_prueba_preview.jpg";
     profilePreview.style.backgroundImage = '';
     createCardBtn.removeAttribute('disabled');
-    //createCardBtn.innerHTML = `<button class="createCardBtn js_createCardBtn"><i class="fa-regular fa-address-card"></i>
-                               //<span class="createCardText">CREAR TARJETA</span></button>`;       
-
 }
 
 const resetPallete = () => {
@@ -56,4 +53,4 @@ const resetIconPhone = () => {
     icontTel.classList.remove('hidden');
 }
 
-resetBtn.addEventListener ('click', handleClickResetInputCard);
+resetBtn.addEventListener('click', handleClickResetInputCard);
